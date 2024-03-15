@@ -3,9 +3,63 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <title>$Amabong</title>
   </head>
   <body>
-    helo world
+    <img src="/assets/img/SITE.png" usemap="#image-map" />
+
+    <a href="/">
+      <div class="box" id="box1"></div>
+    </a>
+    <a href="https://t.me/amabongportal">
+      <div class="box" id="box2"></div>
+    </a>
+    <a href="#">
+      <div class="box" id="box3"></div>
+    </a>
+
+    <map name="image-map">
+      <area
+        id="area1"
+        target=""
+        alt=""
+        title=""
+        href=""
+        coords="1486,869,1897,971"
+        shape="rect"
+      />
+      <area
+        id="area2"
+        target=""
+        alt=""
+        title=""
+        href=""
+        coords="1406,986,1893,1130"
+        shape="rect"
+      />
+      <area
+        id="area3"
+        target=""
+        alt=""
+        title=""
+        href=""
+        coords="1430,1141,1899,1277"
+        shape="rect"
+      />
+    </map>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.slim.min.js"
+      integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/assets/js/rwdImageMaps.js"></script>
+    <script>
+      $(document).ready(function (e) {
+        $("img[usemap]").rwdImageMaps();
+      });
+    </script>
+    <script src="/assets/js/app.js"></script>
   </body>
 </html>
